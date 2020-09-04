@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif !important;
+    margin: 0px;
+}
+
+.rsImage{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.mainSection {
+    height: 85vh;
+    /* padding: 7%; */
+    display: flex;
+    align-items: center;
+}
+
+.centered{
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-footer{
+    height: 7vh;
+}
+
+.right-footer{
+    text-align: right;
+}
