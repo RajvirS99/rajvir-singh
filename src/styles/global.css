@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+*::before{
+    box-sizing: inherit;
+}
+
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Quicksand', sans-serif !important;
     margin: 0px;
@@ -8,6 +16,7 @@ body{
 .rsImage{
     width: 100%;
     border-radius: 4px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .mainSection {
@@ -15,6 +24,14 @@ body{
     /* padding: 7%; */
     display: flex;
     align-items: center;
+}
+
+.aboutSection{
+    height: 85vh;
+    display: block;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 7% 0%;
 }
 
 .centered{
@@ -28,4 +45,18 @@ body{
 
 .right-footer{
     text-align: right;
+}
+
+.social-icons{
+    margin-right: 5%;
+}
+
+.icons-hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.icons-hover:hover{
+    color: #000;
+    text-decoration: none;
 }

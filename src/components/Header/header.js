@@ -5,7 +5,7 @@ export default function Header(props){
     return (
         <Container>
             <Navbar expand="lg">
-                <Navbar.Brand><a href="/">RS</a></Navbar.Brand>
+                <Navbar.Brand><a className="icons-hover" href="/">RS</a></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="ml-auto">

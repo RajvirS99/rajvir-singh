@@ -9,7 +9,7 @@ export default function MainSection(){
             <Row className="centered">
                 <Col xs={6}>
                     <div>
-                        <h1 className="display-4">I'm <b>Rajvir Singh</b></h1>
+                        <p className="display-4">I'm <b className="font-weight-bold">Rajvir Singh</b></p>
                         <h4>Tech Geek, Web Developer, Computer Science Student</h4>   
                     </div>
                 </Col>
