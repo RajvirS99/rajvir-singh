@@ -10,5 +10,5 @@ module.exports = {
     title: `Rajvir Singh`,
     description: `This is a small world of mine where share stuff I want to share about.`
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 }
