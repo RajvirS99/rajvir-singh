@@ -10,6 +10,7 @@ export default function Header(props){
                 <Navbar.Collapse>
                     <Nav className="ml-auto">
                         <Nav.Link href="/blog">Blog</Nav.Link>
+                        <Nav.Link href="/gallery">My Gallery</Nav.Link>
                         <Nav.Link href="/about">About Me</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
