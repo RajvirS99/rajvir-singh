@@ -8,12 +8,13 @@ export default function Home() {
   return (
   <div>
     <Helmet>
-      <meta charSet="utf-8"/>
+      <meta charSet="utf-8" />
       <title>Rajvir Singh</title>
+      <script src="mousemove.js" />
     </Helmet>
     <Header headerText="Index Header" />
-    <MainSection/>
-    <Footer/>
+    <MainSection />
+    <Footer />
   </div>
   )
 }

@@ -14,7 +14,7 @@ export default function MainSection(){
                     </div>
                 </Col>
                 <Col xs={6}>
-                    <img className="rsImage" src={image} alt=""/>
+                    <img className="rsImage" id="moveImage" src={image} alt=""/>
                 </Col> 
             </Row>
             </Container>
