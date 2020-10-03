@@ -1,8 +1,25 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import image from "../../images/rs-home.jpg"
+// import image from "../../images/rs-home.jpg"
+import Img from "gatsby-image"
 
 export default function MainSection(){
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    file(relativePath: {eq: "rs-home.jpg"}) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+  }
+  `)
     return (
         <div className="mainSection">
             <Container>
@@ -14,7 +31,8 @@ export default function MainSection(){
                     </div>
                 </Col>
                 <Col xs={6}>
-                    <img className="rsImage" id="moveImage" src={image} alt=""/>
+                    {/* <img className="rsImage" id="moveImage" src={image} alt=""/> */}
+                    <Img className="rsImage" fluid={data.file.childImageSharp.fluid} />
                 </Col> 
             </Row>
             </Container>

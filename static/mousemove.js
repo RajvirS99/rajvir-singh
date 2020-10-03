@@ -4,5 +4,5 @@ window.onmousemove=function(e){
     let newNum2=((e.pageY - innerHeight/2)/(innerHeight/2));
     
     // console.log(newNum);
-    document.getElementById('moveImage').style.transform=`translate(${(newNum*0.5)}%,${(newNum2*0.5)}%)`
+    document.querySelector('img').style.transform=`translate(${(newNum*0.5)}%,${(newNum2*0.5)}%)`;
     }

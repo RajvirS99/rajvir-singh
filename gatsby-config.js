@@ -10,5 +10,10 @@ module.exports = {
     title: `Rajvir Singh`,
     description: `This is a small world of mine where share stuff I want to share about.`
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    { resolve: `gatsby-source-filesystem`, options: { path: `./src/images/` } },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
+  ],
 }
