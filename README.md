@@ -8,7 +8,7 @@
   Rajvir Singh Blog
 </h1>
 
-This is Simple minimalistic Web App Designed by using Gatsby JS where I can share things I like.
+This is Simple minimalistic Web App Designed by using Gatsby JS where I can share things I like. The project is deployed using netlify on https://rajvirsingh.netlify.app
 
 ## 🚀 Steps to use this Template
 
