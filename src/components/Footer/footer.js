@@ -11,7 +11,7 @@ library.add(fab)
 
 export default function Footer(props){
     return (
-        <Container className="pg-footer">
+        <Container fluid className="pg-footer">
             <Row>
                 <Col>
                 <Link className="icons-hover" to="https://www.facebook.com/Rajvir.saggu99"><FontAwesomeIcon icon={['fab','facebook']} size="lg" className="social-icons" /></Link>

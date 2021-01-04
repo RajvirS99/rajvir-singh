@@ -12,7 +12,7 @@ export default function About() {
                 <title>My Blog</title>
             </Helmet>
             <Header/>
-                <div className="aboutSection">
+                <div className="blogSection">
                     <p>This is my blog</p>
                 </div>
             <Footer/>  
