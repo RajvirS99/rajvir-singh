@@ -12,7 +12,12 @@ export default function About() {
             </Helmet>
             <Header/>
                 <div className="gallerySection">
-                    <p>This is a Gallery Section</p>
+                    <h1>My Gallery</h1>
+                    <p className="textGray mb-0">Welcome to my auspicious world of Photos. All the Pictures here are captured by me.</p>
+                    <p className="textGray">Feel free to check them out.</p>
+                    <div className="photos">
+                        <p>Here comes my photos</p>
+                    </div>
                 </div>
             <Footer/>  
         </div>

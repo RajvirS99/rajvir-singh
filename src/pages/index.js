@@ -41,12 +41,11 @@ export default function Home() {
             <Row className="centered">
                 <Col xs={6}>
                     <div>
-                        <p className="display-4">I'm <b className="font-weight-bold">Rajvir Singh</b></p>
-                        <h4>Tech Geek, Web Developer, Computer Science Student</h4>   
+                        <h1 className="indexPageHeading">I'm <b className="font-weight-bold">Rajvir Singh</b></h1>
+                        <p className="indexPageText">Tech Geek, Web Developer, Computer Science Student</p>   
                     </div>
                 </Col>
                 <Col xs={6}>
-                    {/* <img className="rsImage" id="moveImage" src={image} alt=""/> */}
                     <Img className="rsImage" fluid={data.file.childImageSharp.fluid} />
                 </Col> 
             </Row>

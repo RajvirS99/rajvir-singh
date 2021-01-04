@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/Header/header"
-// import GallerySection from "../components/GallerySection/gallerySection"
+import Post from "../components/Post/post"
 import Footer from "../components/Footer/footer"
 import { Helmet } from "react-helmet"
 
@@ -13,7 +13,15 @@ export default function About() {
             </Helmet>
             <Header/>
                 <div className="blogSection">
-                    <p>This is my blog</p>
+                    <h1>My Experiences</h1>
+                    <p className="textGray">Feel to free to have a ride.</p>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    <Post/>
+                    
                 </div>
             <Footer/>  
         </div>

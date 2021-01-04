@@ -28,13 +28,13 @@ body{
 .aboutSection{
     display: flex;
     flex-direction: column;
-    padding: 11rem 12rem;
+    padding: 10.7rem 12rem;
 }
 
 .gallerySection{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     padding: 3rem 12rem;
 }
 
@@ -70,4 +70,20 @@ body{
 .icons-hover:hover{
     color: #000;
     text-decoration: none;
+}
+
+.blogPost{
+    padding: 2rem 4rem;
+}
+
+.indexPageHeading{
+    font-size: 50px;
+}
+
+.indexPageText{
+    font-size: 25px;
+}
+
+.textGray{
+    color: #929292;
 }
