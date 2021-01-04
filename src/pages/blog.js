@@ -9,7 +9,7 @@ export default function About() {
         <div>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>My Blog</title>
+                <title>My Experiences</title>
             </Helmet>
             <Header/>
                 <div className="blogSection">
