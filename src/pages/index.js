@@ -11,7 +11,7 @@ export default function Home() {
   // image fetching from images directory using graphql
   
   const data = useStaticQuery(graphql`
-  query MyQuery {
+  query homepageImage {
     file(relativePath: {eq: "rs-home.jpg"}) {
       childImageSharp {
         fluid {

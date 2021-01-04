@@ -73,7 +73,7 @@ body{
 }
 
 .blogPost{
-    padding: 2rem 4rem;
+    padding: 1rem 4rem 0rem;
 }
 
 .indexPageHeading{
@@ -86,4 +86,41 @@ body{
 
 .textGray{
     color: #929292;
+}
+
+.blog-post-container{
+    display: block;
+    margin: 0 10rem;
+    max-width: 80rem;
+    padding: 3rem 0rem 3rem;
+}
+
+.blog-post-title{
+    font-weight: 600;
+}
+
+.blog-post-content{
+    display: block;
+    max-width: 90rem;
+    margin: 0 5rem;
+    padding-top: 2rem;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.linkText{
+    text-decoration: none;
+    color: #000;
+}
+
+.linkText:hover{
+    text-decoration: none;
+    color: #000
+}
+
+.blogDescription{
+    padding: 2rem 4rem 1rem;
 }
