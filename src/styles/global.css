@@ -136,8 +136,13 @@ body{
 }
 
 @media screen and (max-width: 990px) {
+
+    .mainSection{
+        padding: 8rem 0rem;
+    }
+
     .blogSection{
-        padding: 3rem 8rem; 
+        padding: 5rem 8rem; 
     }
 
     .aboutSection {
@@ -151,9 +156,23 @@ body{
     .blog-post-content{
         margin: 0 1rem;
     }
+
+    .indexPageHeading{
+        font-size: 40px;
+    }
+
+    .indexPageText{
+        font-size: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 714px) {
+
+    .mainSection{
+        padding: 11rem 0rem;
+    }
+
     .blogSection {
         padding: 3rem 3rem;
     }
@@ -164,5 +183,17 @@ body{
 
     .blog-post-container{
         margin: 0 3rem;
+    }
+
+    .blogPost{
+        padding: 1rem 2rem 0rem;
+    }
+
+    .indexPageHeading{
+        font-size: 30px;
+    }
+
+    .indexPageText{
+        font-size: 15px;
     }
 }
