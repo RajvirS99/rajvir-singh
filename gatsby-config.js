@@ -13,7 +13,19 @@ module.exports = {
   plugins: [
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/images/` } },
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/posts/` } },
-    { resolve: `gatsby-transformer-remark`, options: { plugins: [] }},
+    // { resolve: `gatsby-source-filesystem`, options: { path: `./src/images/postImages` } },
+    {
+      resolve: `gatsby-transformer-remark`, options: {
+        plugins: [
+          {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 590,
+          }
+          }
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -3,7 +3,7 @@ import Header from "../components/Header/header"
 import { graphql, Link } from 'gatsby'
 import Footer from "../components/Footer/footer"
 import { Helmet } from "react-helmet"
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import { Row, Col } from "react-bootstrap"
 
 export default function Blog({ data }) {
@@ -22,14 +22,12 @@ export default function Blog({ data }) {
                 {posts
                     .filter(post => post.node.frontmatter.title.length > 0)
                     .map(({ node: post }) => {
-                        const imageAlt = post.frontmatter.title
-                        const featuredImage = post.frontmatter.image
                         return (
                             <Row className="blogPost">
-                                <Col xs={3}>
-                                    <Img fluid={post.frontmatter.image} alt={imageAlt} />
-                                </Col>
-                                <Col className="blogDescription" xs={9}>
+                                {/* <Col xs={3}>
+                                  <Img sizes={post.frontmatter.featuredImage} />
+                                </Col> */}
+                                <Col className="blogDescription">
                                     <Link className="linkText" to={post.frontmatter.path}><h3>{post.frontmatter.title}</h3></Link>
                                     <p>{post.excerpt}</p>
                                 </Col>
@@ -43,17 +41,17 @@ export default function Blog({ data }) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            image
+query IndexQuery {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    edges {
+      node {
+        excerpt(pruneLength: 300)
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          path
+          image
           }
         }
       }

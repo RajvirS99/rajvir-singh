@@ -12,11 +12,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+              }
             }
           }
         }
       }
-    }
   `)
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)

@@ -123,4 +123,13 @@ body{
 
 .blogDescription{
     padding: 2rem 4rem 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.blog-image {
+    width: 50rem;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 2rem;
 }
