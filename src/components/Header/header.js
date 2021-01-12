@@ -5,7 +5,7 @@ export default function Header(props){
     return (
         <Container fluid>
             <Navbar expand="lg" fluid="true">
-                <Navbar.Brand><a className="icons-hover" href="/">RS</a></Navbar.Brand>
+                <Navbar.Brand><a className="icons-hover" href="/">RAJVIR SINGH</a></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="ml-auto">
