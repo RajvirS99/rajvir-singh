@@ -29,6 +29,8 @@ body{
     display: flex;
     flex-direction: column;
     padding: 10.7rem 12rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .gallerySection{
@@ -101,7 +103,6 @@ body{
 
 .blog-post-content{
     display: block;
-    max-width: 90rem;
     margin: 0 5rem;
     padding-top: 2rem;
     font-size: 18px;
@@ -128,8 +129,40 @@ body{
 }
 
 .blog-image {
-    width: 50rem;
+    width: 100%;
     border-radius: 10px;
     display: block;
     margin: 0 auto 2rem;
+}
+
+@media screen and (max-width: 990px) {
+    .blogSection{
+        padding: 3rem 8rem; 
+    }
+
+    .aboutSection {
+        padding: 7.5rem 10rem;
+    }
+
+    .blog-post-container{
+        margin: 0 6rem;
+    }
+
+    .blog-post-content{
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .blogSection {
+        padding: 3rem 3rem;
+    }
+
+    .aboutSection{
+        padding: 8rem 5rem;
+    }
+
+    .blog-post-container{
+        margin: 0 3rem;
+    }
 }
