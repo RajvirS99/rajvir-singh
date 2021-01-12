@@ -136,7 +136,6 @@ body{
 }
 
 @media screen and (max-width: 990px) {
-
     .mainSection{
         padding: 8rem 0rem;
     }
@@ -165,6 +164,10 @@ body{
         font-size: 20px;
     }
     
+    .gallerySection{
+        padding: 3rem 6rem;
+    }
+
 }
 
 @media screen and (max-width: 714px) {
@@ -195,5 +198,9 @@ body{
 
     .indexPageText{
         font-size: 15px;
+    }
+
+    .gallerySection{
+        padding: 2rem 4rem;
     }
 }
