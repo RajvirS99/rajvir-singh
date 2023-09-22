@@ -1,0 +1,17 @@
+.footer{
+    padding: 2.18rem 2.25rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__socialIcons{
+        svg{
+            margin-right: 2.16rem;
+        }
+    }
+
+    &__copyrightsIcon{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+}
