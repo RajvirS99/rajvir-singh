@@ -1,5 +1,10 @@
 ---
-
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+import '../styles/index.scss'
+import '../styles/globals.scss'
+import { Image } from "astro:assets"
+import rajvirsingh from '../images/rajvirsingh.jpeg'
 ---
 
 <html lang="en">
@@ -8,9 +13,15 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Rajvir Singh</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="landing">
+		<Navbar />
+		<div class="hero-section">
+			<Image class="my-image" src={rajvirsingh} alt="rajvirsingh" width=382 height="382" />
+			<p class="hero-section-heading">I’m <span class="bold">Rajvir Singh</span></p>
+			<p class="hero-section-heading">I develop smooth and pixel perfect interfaces on Web!</p>
+		</div>
+		<Footer />
 	</body>
 </html>

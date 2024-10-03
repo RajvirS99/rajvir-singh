@@ -1,0 +1,50 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92vh;
+    letter-spacing: 0.2em;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        
+        a{
+            font-size: 1.125rem;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .my-image{
+            border-radius: 50%;
+            border: none;
+            margin-bottom: 20px;
+        }
+    
+        &-heading{
+            font-size: 32px;
+            margin: 0;
+    
+            .bold{
+                font-weight: bold;
+            }
+        }
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.9rem;
+    }
+    
+}
