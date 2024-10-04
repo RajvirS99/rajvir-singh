@@ -1,7 +1,7 @@
 ---
 title: "Let the things come in their own way!"
 author: "Rajvir Singh"
-date: 2020-02-12T20:09:27.000Z
+date: 2020-02-13T21:08:35.000Z
 image_url: "/images/let-things-come-in-their-own-way.jpg"
 ---
 
