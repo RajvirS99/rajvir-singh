@@ -1,8 +1,28 @@
 ---
-import Navbar from "../components/Navbar.astro";
 import GlobalLayout from "../layouts/GlobalLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import { getCollection } from "astro:content";
+
+import "../styles/blog.scss";
+
+const posts = await getCollection("posts");
 ---
 
 <GlobalLayout title="Blog">
-    <Navbar />
+  <Navbar />
+  <div class="blog">
+    {
+      posts.map((post) => (
+        <BlogPost
+          title={post.data.title}
+          author={post.data.author}
+          date={post.data.date}
+          content={`${post.body.substring(0, 230)}...`}
+        />
+      ))
+    }
+  </div>
+  <Footer />
 </GlobalLayout>

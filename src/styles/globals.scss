@@ -17,3 +17,10 @@ body{
   margin: 0;
   padding: 2.5rem 0;
 }
+
+.landing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 92vh;
+}
