@@ -1,11 +1,12 @@
 ---
-import '../styles/components/nav.scss'
+import "../styles/components/nav.scss";
 const pathname = new URL(Astro.request.url).pathname;
 ---
 
 <nav>
-    <a class={pathname === "/" ? "active": ""} href="/">Home</a>
-    <a class={pathname === "/blog" ? "active": ""} href="/blog">Blog</a>
-    <a class={pathname === "/about" ? "active": ""} href="/about">About</a>
-    <a href="/Rajvir_Singh__Resume.pdf">Resume</a>
+  <p>{pathname}</p>
+  <a class={pathname === "/" ? "active" : ""} href="/">Home</a>
+  <a class={pathname === "/blog" ? "active" : ""} href="/blog">Blog</a>
+  <a class={pathname === "/about" ? "active" : ""} href="/about">About</a>
+  <a href="/Rajvir_Singh__Resume.pdf">Resume</a>
 </nav>
