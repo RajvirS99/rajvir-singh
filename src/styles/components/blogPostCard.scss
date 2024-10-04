@@ -1,0 +1,26 @@
+.blog-post-card {
+    margin: 3rem 0;
+
+    h2, p{
+        letter-spacing: 0.09em;
+        margin: 0;
+    }
+    
+    a{
+        color: #000;
+        text-decoration: none;
+        
+        h2{
+            font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
+        }
+    }
+
+    p{
+        font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+    }
+    
+    .blog-date{
+        margin-bottom: 1.2rem;
+        color: #727272;
+    }
+}

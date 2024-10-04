@@ -1,19 +1,26 @@
 ---
-import Navbar from "../components/Navbar.astro"
-import Footer from "../components/Footer.astro"
-import '../styles/index.scss'
-import { Image } from "astro:assets"
-import rajvirsingh from '../images/rajvirsingh.jpeg'
-import GlobalLayout from "../layouts/GlobalLayout.astro"
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/index.scss";
+import { Image } from "astro:assets";
+import rajvirsingh from "../images/rajvirsingh.jpeg";
+import GlobalLayout from "../layouts/GlobalLayout.astro";
 ---
 
-<GlobalLayout title="Rajvir Singh" >
-	<Navbar />
-	<div class="hero-section">
-		<Image class="my-image" src={rajvirsingh} alt="rajvirsingh" width=382 height="382" />
-		<p class="hero-section-heading">I&#39;m <span class="bold">Rajvir Singh</span></p>
-		<p class="hero-section-heading">I develop smooth and pixel perfect interfaces on the Web!</p>
-	</div>
-	<Footer />
+<GlobalLayout title="Rajvir Singh">
+  <div class="hero-section">
+    <Image
+      class="my-image"
+      src={rajvirsingh}
+      alt="rajvirsingh"
+      width="382"
+      height="382"
+    />
+    <p class="hero-section-heading">
+      I&#39;m <span class="bold">Rajvir Singh</span>
+    </p>
+    <p class="hero-section-heading">
+      I develop smooth and pixel perfect interfaces on the Web!
+    </p>
+  </div>
 </GlobalLayout>
-

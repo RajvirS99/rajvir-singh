@@ -1,0 +1,59 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+
+import "../../styles/blogPost.scss";
+import { Image } from "astro:assets";
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection("posts");
+  const paths = posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+  return paths;
+};
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+console.log(post);
+
+const dateFormatter = new Intl.DateTimeFormat("en-IN", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const formattedDate = dateFormatter.format(post.data.date);
+---
+
+<GlobalLayout title={`${post.data.title} - ${post.data.author}`}>
+  <div class="blog-post">
+    <h1 class="blog-post-title">{post.data.title}</h1>
+    <p class="blog-post-date">{formattedDate}</p>
+    {
+      post.data.image_url && (
+        <Image
+          class="blog-post-image"
+          src={post.data.image_url}
+          alt={post.slug}
+          height="800"
+          width="1400"
+        />
+      )
+    }
+    <div class="blog-post-content">
+      <Content />
+    </div>
+  </div>
+</GlobalLayout>

@@ -3,15 +3,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
         
         .my-image{
             border-radius: 50%;
             border: none;
             margin-bottom: 20px;
+            object-fit: contain;
+
+            @media (max-width: 550px){
+                width: 250px;
+                height: 250px;
+            }
+            
+            @media (max-width: 400px){
+                width: 200px;
+                height: 200px;
+            }
         }
     
         &-heading{
-            font-size: 32px;
+            font-size: clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem);
+            padding: 0 1rem;
+            text-align: center;
             margin: 0;
     
             .bold{

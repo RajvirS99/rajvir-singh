@@ -1,16 +1,28 @@
 ---
+import "../styles/components/blogPostCard.scss";
+
 interface Props {
   title: string;
   author: string;
   date: Date;
   content: string;
+  slug: string;
 }
 
-const { title, author, date, content } = Astro.props;
+const { title, author, date, content, slug } = Astro.props;
+
+const dateFormatter = new Intl.DateTimeFormat("en-IN", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const formattedDate = dateFormatter.format(date);
 ---
 
-<div class="blog-post-card" style={{ margin: "3rem 0" }}>
-  <h2>{title}</h2>
-  <p>{date}</p>
+<div class="blog-post-card">
+  <a href={`/blog/${slug}`}>
+    <h2>{title}</h2>
+  </a>
+  <p class="blog-date">{formattedDate}</p>
   <p>{content}</p>
 </div>
