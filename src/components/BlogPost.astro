@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  author: string;
+  date: Date;
+  content: string;
+}
+
+const { title, author, date, content } = Astro.props;
+---
+
+<div class="blog-post-card" style={{ margin: "3rem 0" }}>
+  <h2>{title}</h2>
+  <p>{date}</p>
+  <p>{content}</p>
+</div>
