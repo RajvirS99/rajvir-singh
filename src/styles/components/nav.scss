@@ -3,9 +3,14 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 36px;
+    margin-top: 2.5rem;
+
+    @media (max-width: 550px){
+        margin-top: 1.5rem;
+    }
     
     a{
-        font-size: 1.125rem;
+        font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
         text-decoration: none;
         text-underline-offset: 0.15rem;
         color: #000;
