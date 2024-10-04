@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    
+    a{
+        font-size: 1.125rem;
+        text-decoration: none;
+        text-underline-offset: 0.15rem;
+        color: #000;
+    }
+
+    .active{
+        text-decoration: underline;
+    }
+}
+
