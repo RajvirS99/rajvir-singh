@@ -1,11 +1,20 @@
 ---
 import GlobalLayout from "../layouts/GlobalLayout.astro";
+import rajvirsingh from "../images/rajvirsingh.jpeg";
 
 import "../styles/about.scss";
+import { Image } from "astro:assets";
 ---
 
 <GlobalLayout title="About">
   <div class="about-content">
+    <Image
+      class="about-image"
+      src={rajvirsingh}
+      alt="rajvirsingh"
+      width="382"
+      height="382"
+    />
     <p>
       I am <b>Rajvir Singh</b> from Punjab, India. I'm a Computer Science student
       from <b>Guru Nanak Dev Engineering College</b>. As a tech geek, I like to
