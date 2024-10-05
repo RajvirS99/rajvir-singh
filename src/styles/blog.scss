@@ -1,15 +1,14 @@
 .blog{
-    height: 71vh;
-    max-width: 70vw;
-    margin: 0 auto;
+    height: 80vh;
+    padding: 0 15vw;
     overflow-y: auto;
 
     @media (max-width: 550px){
-        max-width:80vw;
-        height: 75vh;
+        padding: 0 8vw;
+        height: 80vh;
     }
 
     @media (max-width: 400px){
-        max-width: 90vw;
+        padding: 0 5vw;
     }
 }
