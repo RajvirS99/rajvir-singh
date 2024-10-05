@@ -1,13 +1,12 @@
 .about-content{
-    max-height: 70vh;
-    max-width: 70vw;
-    margin: 0 auto;
-    line-height: 2rem;
+    max-height: 80vh;
+    padding: 0 12vw;
+    line-height: 1.8rem;
     text-align: justify;
     overflow-y: auto;
 
     @media (max-width: 550px){
-        max-width: 90vw;
+        padding: 3vh 5vw 0;
         line-height: normal;
     }
 

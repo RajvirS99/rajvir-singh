@@ -1,15 +1,14 @@
 .blog-post{
-    height: 71vh;
-    max-width: 70vw;
-    margin: 0 auto;
+    height: 80vh;
+    padding: 0 15vw;
     overflow-y: scroll;
 
     @media (max-width: 550px){
-        max-width: 80vw;
+        padding: 0 10vw;
     }
 
     @media (max-width: 400px){
-        max-width: 85vw;    
+        padding: 0 5vw;    
     }
 
     &-title, &-author, &-date{
@@ -21,6 +20,7 @@
     }
 
     &-title{
+        margin-top: 3rem;
         font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
     }
 
@@ -31,15 +31,13 @@
 
     &-image{
         width: 100%;
-        height: 500px;
+        height: fit-content;
         object-fit: contain;
-
-        @media (max-width: 550px){
-            height: 200px;
-        }
     }
 
     &-content{
+        line-height: 2rem;
+
         p{
             font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
             letter-spacing: 0.1rem;
