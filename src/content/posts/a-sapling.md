@@ -2,7 +2,7 @@
 title: "A Sapling"
 author: "Rajvir Singh"
 date: 2020-04-28T21:08:35.000Z
-image_url: "/images/a-sapling.jpg"
+image_url: "/images/a-sapling.webp"
 ---
 
 My love for nature is always consistent from the very first time. Every Plant, Every Leaf, Every Flower of it, I consider them as a friend. I usually talk to them and even they reply to me. I just need to see it with the right eye.

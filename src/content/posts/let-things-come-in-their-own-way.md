@@ -2,7 +2,7 @@
 title: "Let the things come in their own way!"
 author: "Rajvir Singh"
 date: 2020-02-13T21:08:35.000Z
-image_url: "/images/let-things-come-in-their-own-way.jpg"
+image_url: "/images/let-things-come-in-their-own-way.webp"
 ---
 
 Sometimes, we are the ones who complicate things so much that It starts stressing us. It can be anything, maybe negative or positive. Some things are meant to happen in the way they are happening.

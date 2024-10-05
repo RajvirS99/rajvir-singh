@@ -2,7 +2,7 @@
 title: "Unbelievable Happenings"
 author: "Rajvir Singh"
 date: 2020-04-18T21:08:35.000Z
-image_url: "/images/unbelievable-happenings.jpg"
+image_url: "/images/unbelievable-happenings.webp"
 ---
 
 Unbelievable happenings, we don’t know when they can happen. They just come into our lives and make us completely surprised. Maybe, it’s the rule of nature. I’ve always said that life is full of ups and downs. Sometimes they come in our ups and sometimes downs.
