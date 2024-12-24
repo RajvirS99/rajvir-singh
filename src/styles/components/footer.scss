@@ -1,16 +1,15 @@
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.9rem;
-    margin: 0.5rem 0 2rem;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+  margin: 0.5rem 0 2rem;
 
-    @media (max-width: 550px){
-        margin-bottom: 1rem;
+  @media (max-width: 550px) {
+    margin-bottom: 1rem;
 
-        svg{
-            width: 30px;
-        }
+    svg {
+      width: 30px;
     }
-
+  }
 }
