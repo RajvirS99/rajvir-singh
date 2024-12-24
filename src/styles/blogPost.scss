@@ -1,46 +1,49 @@
-.blog-post{
-    height: 80vh;
-    padding: 0 15vw;
-    overflow-y: scroll;
+.blog-post {
+  height: 80vh;
+  padding: 0 15vw;
+  overflow-y: scroll;
 
-    @media (max-width: 550px){
-        padding: 0 10vw;
+  @media (max-width: 550px) {
+    padding: 0 10vw;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 5vw;
+  }
+
+  &-title,
+  &-author,
+  &-date {
+    margin: 0;
+  }
+
+  &-author,
+  &-date {
+    color: #727272;
+  }
+
+  &-title {
+    margin-top: 3rem;
+    font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
+  }
+
+  &-date {
+    font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+    margin-bottom: 1.2rem;
+  }
+
+  &-image {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+  }
+
+  &-content {
+    line-height: 2rem;
+
+    p {
+      font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+      letter-spacing: 0.1rem;
     }
-
-    @media (max-width: 400px){
-        padding: 0 5vw;    
-    }
-
-    &-title, &-author, &-date{
-        margin: 0;
-    }
-
-    &-author, &-date{
-        color: #727272;
-    }
-
-    &-title{
-        margin-top: 3rem;
-        font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
-    }
-
-    &-date{
-        font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
-        margin-bottom: 1.2rem;
-    }
-
-    &-image{
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    }
-
-    &-content{
-        line-height: 2rem;
-
-        p{
-            font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
-            letter-spacing: 0.1rem;
-        }
-    }
+  }
 }
