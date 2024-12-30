@@ -21,11 +21,13 @@ html {
   --primary-text: #000000;
   --secondary-text: #727272;
   --body-background: #efefef;
+  --social-icon: #000000;
 
   &.dark {
     --primary-text: #ffffff;
     --secondary-text: #727272;
     --body-background: #171717;
+    --social-icon: #FFFFFF;
   }
 }
 
@@ -44,4 +46,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+
+#x-icon, #github-icon{
+  fill: var(--social-icon);
 }
