@@ -1,50 +1,15 @@
 ---
 import "../styles/components/nav.scss";
-import LightMode from "../icons/LightMode.astro";
-import DarkMode from "../icons/DarkMode.astro";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
 
 const pathname = new URL(Astro.request.url).pathname;
 const resumeLink = import.meta.env.RESUME;
 ---
-
-<script>
-  const darkModeIcon = document.getElementById(
-    "dark-mode--icon"
-  ) as HTMLInputElement;
-  const lightModeIcon = document.getElementById(
-    "light-mode--icon"
-  ) as HTMLInputElement;
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-  // if (systemTheme === "dark") {
-  //   darkModeIcon.style.display = "none";
-  //   document.body.classList.add("dark");
-  // }
-  // if (systemTheme === "dark") {
-  //   darkModeIcon.style.display = "none";
-  //   document.body.classList.add("dark");
-  // } else {
-  //   lightModeIcon.style.display = "none";
-  // }
-
-  darkModeIcon.addEventListener("click", () =>
-    document.body.classList.toggle("dark")
-  );
-  lightModeIcon.addEventListener("click", () =>
-    document.body.classList.toggle("light")
-  );
-</script>
 
 <nav>
   <a class={pathname === "/" ? "active" : ""} href="/">Home</a>
   <a class={pathname === "/blog" ? "active" : ""} href="/blog">Blog</a>
   <a class={pathname === "/about" ? "active" : ""} href="/about">About</a>
   <a href={resumeLink}>Resume</a>
-  <button id="light-mode--icon">
-    <LightMode />
-  </button>
-  <button id="dark-mode--icon">
-    <DarkMode />
-  </button>
+  <ThemeSwitcher />
 </nav>
