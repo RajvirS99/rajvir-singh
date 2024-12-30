@@ -9,9 +9,9 @@ import '../styles/components/themeSwitcher.scss';
     <button id="darkMode" class="ts--button" type="button" style="display: flex; align-items:center;"><DarkMode /></button>
 </div>
 
-<script is:inline>
-    const darkModeIcon = document.getElementById("darkMode");
-    const lightModeIcon = document.getElementById("lightMode");
+<script>
+    const darkModeIcon = document.getElementById("darkMode") as HTMLButtonElement;
+    const lightModeIcon = document.getElementById("lightMode") as HTMLButtonElement;
 
     const theme = (() => {
       if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
