@@ -15,6 +15,10 @@ nav {
     text-decoration: none;
     text-underline-offset: 0.15rem;
     color: var(--primary-text);
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   .active {
