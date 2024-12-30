@@ -1,18 +1,12 @@
 ---
 import DarkMode from "../icons/DarkMode.astro";
 import LightMode from "../icons/LightMode.astro";
-import System from "../icons/System.astro";
 import '../styles/components/themeSwitcher.scss';
 ---
 
 <div class="ts--wrapper">
     <button id="lightMode" class="ts--button" type="button" style="display: flex; align-items:center;"><LightMode /></button>
     <button id="darkMode" class="ts--button" type="button" style="display: flex; align-items:center;"><DarkMode /></button>
-    <div id="ts-dropdown" class="ts--dropdown">
-        <button type="button" id="sel-light"><LightMode />Light</button>
-        <button type="button" id="sel-dark"><DarkMode />Dark</button>
-        <button type="button" id="sel-system"><System />System</button>
-    </div>
 </div>
 
 <script is:inline>
