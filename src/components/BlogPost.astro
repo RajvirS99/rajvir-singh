@@ -3,13 +3,12 @@ import "../styles/components/blogPostCard.scss";
 
 interface Props {
   title: string;
-  author: string;
   date: Date;
   content: string;
   slug: string;
 }
 
-const { title, author, date, content, slug } = Astro.props;
+const { title, date, content, slug } = Astro.props;
 
 const dateFormatter = new Intl.DateTimeFormat("en-IN", {
   year: "numeric",

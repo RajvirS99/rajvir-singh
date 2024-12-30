@@ -1,23 +1,28 @@
-nav{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin: 2.5rem 0 0.5rem;
+
+  @media (max-width: 550px) {
+    margin-top: 1.5rem;
+  }
+
+  a {
+    font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+    text-decoration: none;
+    text-underline-offset: 0.15rem;
+    color: var(--primary-text);
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+  button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 36px;
-    margin: 2.5rem 0 0.5rem;
-
-    @media (max-width: 550px){
-        margin-top: 1.5rem;
-    }
-    
-    a{
-        font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
-        text-decoration: none;
-        text-underline-offset: 0.15rem;
-        color: #000;
-    }
-
-    .active{
-        text-decoration: underline;
-    }
+  }
 }
-
