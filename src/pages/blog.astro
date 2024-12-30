@@ -16,7 +16,6 @@ const posts = await getCollection("posts");
       posts.map((post) => (
         <BlogPost
           title={post.data.title}
-          author={post.data.author}
           slug={post.slug}
           date={post.data.date}
           content={`${post.body.substring(0, 230)}...`}
