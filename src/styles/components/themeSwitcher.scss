@@ -1,0 +1,41 @@
+.ts {
+  &--wrapper {
+    display: flex;
+    align-items: center;
+    // background: gray;
+    position: relative;
+  }
+
+  &--button {
+  }
+
+  &--dropdown-display {
+    display: flex !important;
+  }
+
+  &--dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin: 5px 0;
+    background: #272727;
+    padding: 0.625rem 1rem;
+    flex-direction: column;
+		border-radius: .25rem;
+
+    button {
+      margin-bottom: 0.625rem;
+      display: flex;
+      gap: .75rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
+}

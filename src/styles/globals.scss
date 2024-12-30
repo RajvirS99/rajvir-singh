@@ -17,39 +17,25 @@
   font-display: swap;
 }
 
+html {
+  --primary-text: #000000;
+  --secondary-text: #727272;
+  --body-background: #efefef;
+
+  &.dark {
+    --primary-text: #ffffff;
+    --secondary-text: #727272;
+    --body-background: #171717;
+  }
+}
+
 * {
   font-family: "Prompt", sans-serif;
   letter-spacing: 0.09em;
+  color: var(--primary-text);
 }
 
 body {
-  --primary-text: $black;
-  --secondary-text: $gray;
-  --body-background: $body-bg-light;
-
-  &.dark {
-    --primary-text: $white;
-    --secondary-text: $gray;
-    --body-background: $body-bg-dark;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --primary-text: $white;
-    --secondary-text: $gray;
-    --body-background: $body-bg-dark;
-
-    &.light {
-      --primary-text: $black;
-      --secondary-text: $gray;
-      --body-background: $body-bg-light;
-    }
-  }
-}
-
-
-body{
   background-color: var(--body-background);
   margin: 0;
   padding: 0;
