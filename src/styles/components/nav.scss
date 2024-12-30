@@ -1,9 +1,9 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2.25rem;
   margin: 2.5rem 0 0.5rem;
+  min-height: 2rem;
 
   @media (max-width: 550px) {
     margin-top: 1.5rem;
