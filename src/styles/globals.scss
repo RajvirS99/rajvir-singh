@@ -17,6 +17,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   --primary-text: #000000;
   --secondary-text: #727272;
@@ -27,7 +36,7 @@ html {
     --primary-text: #ffffff;
     --secondary-text: #727272;
     --body-background: #171717;
-    --social-icon: #FFFFFF;
+    --social-icon: #ffffff;
   }
 }
 
@@ -48,7 +57,16 @@ body {
   align-items: center;
 }
 
-
-#x-icon, #github-icon{
+#x-icon,
+#github-icon {
   fill: var(--social-icon);
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  font-size: .875rem;
+
+  span{
+    font-family: "Inconsolata", monospace;
+  }
 }
