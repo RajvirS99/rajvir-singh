@@ -31,12 +31,14 @@ html {
   --secondary-text: #727272;
   --body-background: #efefef;
   --social-icon: #000000;
+  --code-text-color: #e1e4e8;
 
   &.dark {
     --primary-text: #ffffff;
     --secondary-text: #727272;
     --body-background: #171717;
     --social-icon: #ffffff;
+    --code-text-color: #ffffff;
   }
 }
 

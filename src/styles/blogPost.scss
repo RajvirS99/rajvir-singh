@@ -54,5 +54,11 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     text-align: justify;
+    
+    code{
+      span{
+        color: var(--code-text-color);
+      }
+    }
   }
 }
