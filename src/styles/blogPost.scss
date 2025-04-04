@@ -48,8 +48,11 @@
   }
 
   .astro-code {
-    padding: .9375rem;
-    border-radius: .9375rem;
+    padding: 0.9375rem;
+    border-radius: 0.9375rem;
     margin-left: 1.25rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
   }
 }
