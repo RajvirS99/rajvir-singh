@@ -1,0 +1,19 @@
+.about-content {
+  max-height: 80vh;
+  padding: 0 12vw;
+  line-height: 1.8rem;
+  overflow-y: auto;
+
+  @media (max-width: 550px) {
+    padding: 3vh 5vw 0;
+    line-height: normal;
+  }
+
+  .about-image {
+    margin: 0 auto;
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+}

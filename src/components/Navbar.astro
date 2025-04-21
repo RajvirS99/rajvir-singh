@@ -1,0 +1,15 @@
+---
+import "../styles/components/nav.scss";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+
+const pathname = new URL(Astro.request.url).pathname;
+const resumeLink = import.meta.env.RESUME;
+---
+
+<nav>
+  <a class={pathname === "/" ? "active" : ""} href="/">Home</a>
+  <a class={pathname === "/blog" ? "active" : ""} href="/blog">Blog</a>
+  <a class={pathname === "/about" ? "active" : ""} href="/about">About</a>
+  <a href={resumeLink}>Resume</a>
+  <ThemeSwitcher />
+</nav>

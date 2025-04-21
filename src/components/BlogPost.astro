@@ -1,0 +1,31 @@
+---
+import "../styles/components/blogPostCard.scss";
+
+interface Props {
+  title: string;
+  date: Date;
+  content: string;
+  slug: string;
+}
+
+const { title, date, content, slug } = Astro.props;
+
+const dateFormatter = new Intl.DateTimeFormat("en-IN", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const formattedDate = dateFormatter.format(date);
+---
+
+<div class="blog-post-card">
+  <a href={`/blog/${slug}`}>
+    <h2 transition:name={`blog-title-${slug}`} transition:animate="initial">
+      {title}
+    </h2>
+  </a>
+  <p class="blog-date" transition:name={`blog-date-${formattedDate}`}>
+    {formattedDate}
+  </p>
+  <p>{content}</p>
+</div>

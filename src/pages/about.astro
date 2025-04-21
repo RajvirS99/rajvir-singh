@@ -1,0 +1,36 @@
+---
+import GlobalLayout from "../layouts/GlobalLayout.astro";
+import rajvirsingh from "../images/rajvirsingh.jpeg";
+
+import "../styles/about.scss";
+import { Image } from "astro:assets";
+---
+
+<GlobalLayout title="About">
+  <div class="about-content">
+    <Image
+      class="about-image"
+      src={rajvirsingh}
+      alt="rajvirsingh"
+      width="382"
+      height="382"
+      transition:name="image-rajvirsingh"
+    />
+    <p>
+      I am <b>Rajvir Singh</b> from Punjab, India. I'm a Computer Science student
+      from <b>Guru Nanak Dev Engineering College</b>. As a tech geek, I like to
+      know stuff about technologies. It can be any anything from programming to
+      latest devices. I love to share my knowledge. I have a YouTube channel
+      where I like to share stuff I learn.
+    </p>
+    <p>
+      Being a <b>Nature Lover</b>, I like to spend time in outside. I love to
+      <b>travel</b> new places and talking to new people. Getting exposure about
+      new places. Sometimes I also like click pictures of world living around me.
+    </p>
+    <p>
+      <b>Fun fact: </b>It includes things as small as snowflake to as big as
+      sunsets.
+    </p>
+  </div>
+</GlobalLayout>

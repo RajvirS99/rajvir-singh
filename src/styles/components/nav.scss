@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  margin: 2.5rem 0 0.5rem;
+  min-height: 2rem;
+
+  @media (max-width: 550px) {
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  a {
+    font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+    text-decoration: none;
+    text-underline-offset: 0.15rem;
+    color: var(--primary-text);
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+  button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+}
