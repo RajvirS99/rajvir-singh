@@ -38,8 +38,12 @@ const formattedDate = dateFormatter.format(post.data.date);
 
 <GlobalLayout title={`${post.data.title}`}>
   <div class="blog-post">
-    <h1 class="blog-post-title">{post.data.title}</h1>
-    <p class="blog-post-date">{formattedDate}</p>
+    <h1 class="blog-post-title" transition:name={`blog-title-${post.slug}`}>
+      {post.data.title}
+    </h1>
+    <p class="blog-post-date" transition:name={`blog-date-${formattedDate}`}>
+      {formattedDate}
+    </p>
     {
       post.data.image_url && (
         <Image
