@@ -1,8 +1,11 @@
 .about-content {
-  max-height: 80vh;
+  height: 90vh;
   padding: 0 12vw;
   line-height: 1.8rem;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 550px) {
     padding: 3vh 5vw 0;
@@ -11,8 +14,8 @@
 
   .about-image {
     margin: 0 auto;
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     object-fit: contain;
     border-radius: 50%;
   }
