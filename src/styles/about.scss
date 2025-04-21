@@ -1,8 +1,7 @@
 .about-content {
-  height: 90vh;
+  min-height: 90vh;
   padding: 0 12vw;
   line-height: 1.8rem;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
