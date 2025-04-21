@@ -1,7 +1,6 @@
 .blog-post {
-  height: 80vh;
+  min-height: 80vh;
   padding: 0 15vw;
-  overflow-y: scroll;
 
   @media (max-width: 550px) {
     padding: 0 10vw;
