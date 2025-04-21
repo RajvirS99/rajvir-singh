@@ -5,6 +5,9 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+  server: {
+    host: true,
+  },
   trailingSlash: "never",
   integrations: [partytown({
     config: {
