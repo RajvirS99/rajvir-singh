@@ -3,6 +3,11 @@
   padding: 0 15vw;
   overflow-y: auto;
 
+  &-heading{
+    margin-top: 3rem;
+    font-size: clamp(1.625rem, 1.3125rem + 1vw, 1.875rem);
+  }
+
   @media (max-width: 550px) {
     padding: 0 8vw;
     height: 80vh;
