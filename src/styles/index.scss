@@ -23,7 +23,7 @@
   }
 
   &-heading {
-    font-size: clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem);
+    font-size: clamp(1.5rem, 0.4063rem + 3.5vw, 2.375rem);;
     padding: 0 1rem;
     text-align: center;
     margin: 0;
@@ -31,5 +31,10 @@
     .bold {
       font-weight: bold;
     }
+  }
+
+  &-subheading {
+    text-align: center;
+    font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
   }
 }

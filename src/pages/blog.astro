@@ -10,7 +10,7 @@ const posts = await getCollection("posts");
 
 <GlobalLayout title="Blog">
   <div class="blog">
-    <h1>Dev Logs, Deep Dives & Debug Tales</h1>
+    <h1 class="blog-heading">Dev Logs, Deep Dives & Debug Tales</h1>
     {
       posts.map((post) => (
         <BlogPost
