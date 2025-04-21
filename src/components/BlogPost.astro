@@ -20,8 +20,12 @@ const formattedDate = dateFormatter.format(date);
 
 <div class="blog-post-card">
   <a href={`/blog/${slug}`}>
-    <h2>{title}</h2>
+    <h2 transition:name={`blog-title-${slug}`} transition:animate="initial">
+      {title}
+    </h2>
   </a>
-  <p class="blog-date">{formattedDate}</p>
+  <p class="blog-date" transition:name={`blog-date-${formattedDate}`}>
+    {formattedDate}
+  </p>
   <p>{content}</p>
 </div>
