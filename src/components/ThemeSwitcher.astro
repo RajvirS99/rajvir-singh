@@ -20,50 +20,57 @@ import "../styles/components/themeSwitcher.scss";
 </div>
 
 <script>
-  const darkModeIcon = document.getElementById("darkMode") as HTMLButtonElement;
-  const lightModeIcon = document.getElementById(
-    "lightMode"
-  ) as HTMLButtonElement;
+  document.addEventListener("astro:page-load", () => {
+    const darkModeIcon = document.getElementById(
+      "darkMode"
+    ) as HTMLButtonElement;
+    const lightModeIcon = document.getElementById(
+      "lightMode"
+    ) as HTMLButtonElement;
 
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme") ?? "light";
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
+    const theme = (() => {
+      if (
+        typeof localStorage !== "undefined" &&
+        localStorage.getItem("theme")
+      ) {
+        return localStorage.getItem("theme") ?? "light";
+      }
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+      return "light";
+    })();
 
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-    lightModeIcon.style.display = "none";
-  } else {
-    document.documentElement.classList.add("dark");
-    darkModeIcon.style.display = "none";
-  }
-
-  window.localStorage.setItem("theme", theme);
-
-  const handleToggleClick = () => {
-    const element = document.documentElement;
-    element.classList.toggle("dark");
-
-    const isDark = element.classList.contains("dark");
-    if (!isDark) {
-      darkModeIcon.style.display = "flex";
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
       lightModeIcon.style.display = "none";
     } else {
-      lightModeIcon.style.display = "flex";
+      document.documentElement.classList.add("dark");
       darkModeIcon.style.display = "none";
     }
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  };
 
-  document
-    .getElementById("darkMode")
-    ?.addEventListener("click", handleToggleClick);
-  document
-    .getElementById("lightMode")
-    ?.addEventListener("click", handleToggleClick);
+    window.localStorage.setItem("theme", theme);
+
+    const handleToggleClick = () => {
+      const element = document.documentElement;
+      element.classList.toggle("dark");
+
+      const isDark = element.classList.contains("dark");
+      if (!isDark) {
+        darkModeIcon.style.display = "flex";
+        lightModeIcon.style.display = "none";
+      } else {
+        lightModeIcon.style.display = "flex";
+        darkModeIcon.style.display = "none";
+      }
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    };
+
+    document
+      .getElementById("darkMode")
+      ?.addEventListener("click", handleToggleClick);
+    document
+      .getElementById("lightMode")
+      ?.addEventListener("click", handleToggleClick);
+  });
 </script>
