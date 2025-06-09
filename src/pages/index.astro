@@ -3,6 +3,10 @@ import "../styles/index.scss";
 import { Image } from "astro:assets";
 import rajvirsingh from "../images/rajvirsingh.jpeg";
 import GlobalLayout from "../layouts/GlobalLayout.astro";
+import Github from "../icons/Github.astro";
+import X from "../icons/X.astro";
+import Youtube from "../icons/Youtube.astro";
+import Linkedin from "../icons/Linkedin.astro";
 ---
 
 <GlobalLayout title="Rajvir Singh">
@@ -21,5 +25,13 @@ import GlobalLayout from "../layouts/GlobalLayout.astro";
     <p class="hero-section-subheading">
       Full Stack Developer • YouTuber • React • Node.js • TypeScript Enthusiast
     </p>
+    <div class="hero-section-social-icons">
+      <a href="https://github.com/RajvirS99"><Github /></a>
+      <a href="https://x.com/rajvirsingh_99"><X /></a>
+      <a href="https://www.youtube.com/channel/UCiqNZRLlzE0I7SYyU_i87Tg"
+        ><Youtube /></a
+      >
+      <a href="https://www.linkedin.com/in/iamrajvir/"><Linkedin /></a>
+    </div>
   </div>
 </GlobalLayout>
