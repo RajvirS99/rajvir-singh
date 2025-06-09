@@ -50,15 +50,53 @@
   }
 }
 
-.index-footer{
+.scroll-down-indicator{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  gap: 0;
+  margin: 0;
+  text-decoration: none;
   
   svg{
     animation: bounce 2000ms;
     animation-iteration-count: infinite;
+  }
+}
+
+.work-section{
+  padding: 5rem;
+  width: 85%;
+  height: 100vh;
+
+  h1{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &-content{
+    display: flex;
+    gap: 3rem;
+
+    div{
+      flex: 1;
+    }
+  }
+
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .open-source-contributions{
+    h2{
+      margin: 0 0 2rem;
+    }
+
+    li{
+      margin-bottom: 1rem;
+    }
   }
 }
