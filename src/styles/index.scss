@@ -37,4 +37,28 @@
     text-align: center;
     font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
   }
+
+  &-social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    svg{
+      height: 1.875rem;
+    }
+  }
+}
+
+.index-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  svg{
+    animation: bounce 2000ms;
+    animation-iteration-count: infinite;
+  }
 }
