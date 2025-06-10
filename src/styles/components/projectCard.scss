@@ -1,0 +1,22 @@
+.project-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    &-image{
+        height: 6.25rem;
+        width: 12.5rem;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    a{
+        text-underline-offset: 0.25rem;
+    }
+
+    &-title{
+        text-align: center;
+        font-weight: normal;
+        margin: 0.5rem 0 0;
+    }
+}

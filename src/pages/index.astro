@@ -3,6 +3,9 @@ import "../styles/index.scss";
 import { Image } from "astro:assets";
 import rajvirsingh from "../images/rajvirsingh.jpeg";
 import GlobalLayout from "../layouts/GlobalLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { bondium, mazzolari, benvenuto, acNautica } from "../images/projects";
+import { Github, X, Youtube, Linkedin, LongDownArrow } from "../icons";
 ---
 
 <GlobalLayout title="Rajvir Singh">
@@ -21,5 +24,58 @@ import GlobalLayout from "../layouts/GlobalLayout.astro";
     <p class="hero-section-subheading">
       Full Stack Developer • YouTuber • React • Node.js • TypeScript Enthusiast
     </p>
+    <div class="hero-section-social-icons">
+      <a href="https://github.com/RajvirS99"><Github /></a>
+      <a href="https://x.com/rajvirsingh_99"><X /></a>
+      <a href="https://www.youtube.com/channel/UCiqNZRLlzE0I7SYyU_i87Tg"
+        ><Youtube /></a
+      >
+      <a href="https://www.linkedin.com/in/iamrajvir/"><Linkedin /></a>
+    </div>
+  </div>
+  <a class="scroll-down-indicator" href="#projects-and-contributions">
+    <p>My Work</p>
+    <LongDownArrow />
+  </a>
+  <div id="projects-and-contributions" class="work-section">
+    <h1>My Projects & Contributions</h1>
+    <div class="work-section-content">
+      <div class="projects">
+        <ProjectCard
+          title="Mazzolari"
+          description=""
+          image={mazzolari}
+          url="https://mazzolari.com/"
+        />
+        <ProjectCard
+          title="Benvenuto"
+          description=""
+          image={benvenuto}
+          url="https://www.benvenuto.org/torino"
+        />
+        <ProjectCard title="Bondium" description="" image={bondium} />
+        <ProjectCard title="AC Nautica" description="" image={acNautica} />
+      </div>
+      <div class="open-source-contributions">
+        <h2>Open Source Contributions</h2>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/twentyhq/twenty/pull/10554"
+              target="_blank"
+              >fix: added server preconnect url improving the page load time</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/finos/git-proxy/pull/735"
+              target="_blank"
+              >fix: #669-ui/docs: clone component is undefined when running as a
+              server</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </GlobalLayout>

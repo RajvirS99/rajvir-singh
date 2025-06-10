@@ -46,6 +46,7 @@ html {
   font-family: "Prompt", sans-serif;
   letter-spacing: 0.09em;
   color: var(--primary-text);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -70,5 +71,17 @@ code {
 
   span{
     font-family: "Inconsolata", monospace;
+  }
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
