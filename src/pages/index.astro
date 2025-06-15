@@ -6,6 +6,7 @@ import GlobalLayout from "../layouts/GlobalLayout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { bondium, mazzolari, benvenuto, acNautica } from "../images/projects";
 import { Github, X, Youtube, Linkedin, LongDownArrow } from "../icons";
+import projects from "../../json/projects.json";
 ---
 
 <GlobalLayout title="Rajvir Singh">
@@ -41,23 +42,15 @@ import { Github, X, Youtube, Linkedin, LongDownArrow } from "../icons";
     <h1>My Projects & Contributions</h1>
     <div class="work-section-content">
       <div class="projects">
-        <ProjectCard
-          title="Mazzolari"
-          description=""
-          image={mazzolari}
-          url="https://mazzolari.com/"
-        />
-        <ProjectCard
-          title="Benvenuto"
-          description=""
-          image={benvenuto}
-          url="https://www.benvenuto.org/torino"
-        />
-        <ProjectCard title="Bondium" description="" image={bondium} />
-        <ProjectCard title="AC Nautica" description="" image={acNautica} />
+        <h2>Projects</h2>
+        {
+          projects.map(({ title, url, description }) => (
+            <ProjectCard title={title} url={url} description={description} />
+          ))
+        }
       </div>
       <div class="open-source-contributions">
-        <h2>Open Source Contributions</h2>
+        <h3>Open Source Contributions</h3>
         <ul>
           <li>
             <a

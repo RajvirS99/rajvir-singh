@@ -23,7 +23,7 @@
   }
 
   &-heading {
-    font-size: clamp(1.5rem, 0.4063rem + 3.5vw, 2.375rem);;
+    font-size: clamp(1.5rem, 0.4063rem + 3.5vw, 2.375rem);
     padding: 0 1rem;
     text-align: center;
     margin: 0;
@@ -38,19 +38,19 @@
     font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
   }
 
-  &-social-icons{
+  &-social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 
-    svg{
+    svg {
       height: 1.875rem;
     }
   }
 }
 
-.scroll-down-indicator{
+.scroll-down-indicator {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,44 +59,67 @@
   gap: 0;
   margin: 0;
   text-decoration: none;
-  
-  svg{
+
+  svg {
     animation: bounce 2000ms;
     animation-iteration-count: infinite;
   }
 }
 
-.work-section{
-  padding: 5rem;
+.work-section {
   width: 85%;
   height: 100vh;
 
-  h1{
-    text-align: center;
-    margin-bottom: 5rem;
+  @media (max-width: 768px) {
+    padding: 0;
   }
 
-  &-content{
+  h1 {
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  &-content {
     display: flex;
     gap: 3rem;
 
-    div{
-      flex: 1;
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
   }
 
-  .projects{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+  .projects {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0 0 2rem;
+    }
   }
-  .open-source-contributions{
-    h2{
+
+  .open-source-contributions {
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h3 {
       margin: 0 0 2rem;
     }
 
-    li{
+    li {
       margin-bottom: 1rem;
+      transition: 300ms;
+
+      &:hover {
+        transform: scale(1.01);
+      }
     }
   }
 }

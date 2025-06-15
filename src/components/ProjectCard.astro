@@ -1,18 +1,22 @@
 ---
 import "../styles/components/projectCard.scss";
+import { ExternalLink } from "../icons";
 
 const { title, description, image, url } = Astro.props;
 ---
 
 <div class="project-card">
-  <img src={image.src} alt="project image" class="project-card-image" />
-  {
-    url ? (
-      <a href={url}>
-        <h4 class="project-card-title">{title}</h4>
-      </a>
-    ) : (
-      <h4 class="project-card-title">{title}</h4>
-    )
-  }
+  <div class="project-card-header">
+    <h3>{title}</h3>
+    <span
+      >{
+        url && (
+          <a href={url}>
+            <ExternalLink />
+          </a>
+        )
+      }</span
+    >
+  </div>
+  <p>{description}</p>
 </div>

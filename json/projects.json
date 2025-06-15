@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Mazzolari",
+    "url": "https://mazzolari.com/",
+    "description": "A luxury Italian e-commerce store offering premium perfumes, skincare, grooming essentials, and home products with elegant design."
+  },
+  {
+    "title": "Benvenuto",
+    "url": "https://www.benvenuto.org/torino",
+    "description": "A web application built for an Italian restaurant chain, streamlining events and dinner bookings while enhancing family experiences with dedicated child care features."
+  },
+  {
+    "title": "Bondium",
+    "description": "A session booking system for psycho-physical wellbeing with Google calendar and simplybook integration."
+  },
+  {
+    "title": "AC Nautica",
+    "description": "A website for Barcelona-based dealing with boats and various other things in marine Industry."
+  }
+]

@@ -10,5 +10,6 @@ import Youtube from "./Youtube.astro";
 
 // other interaction icons
 import LongDownArrow from "./LongDownArrow.astro";
+import ExternalLink from "./ExternalLink.astro";
 
-export { DarkMode, LightMode, Linkedin, Github, X, Youtube, LongDownArrow }
+export { DarkMode, LightMode, Linkedin, Github, X, Youtube, LongDownArrow, ExternalLink }

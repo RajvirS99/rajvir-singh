@@ -1,22 +1,30 @@
-.project-card{
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.625rem;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &-header {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 
-    &-image{
-        height: 6.25rem;
-        width: 12.5rem;
-        object-fit: contain;
-        margin: 0 auto;
+    h3 {
+      margin: 0;
     }
 
-    a{
-        text-underline-offset: 0.25rem;
+    svg {
+      color: oklch(87.2% 0.01 258.338);
     }
+  }
 
-    &-title{
-        text-align: center;
-        font-weight: normal;
-        margin: 0.5rem 0 0;
-    }
+  p {
+    margin: 0;
+    color: oklch(87.2% 0.01 258.338);
+  }
 }
