@@ -27,11 +27,14 @@
 }
 
 html {
+  transition: 200ms ease-in-out;
+
   --primary-text: #000000;
   --secondary-text: #727272;
   --body-background: #efefef;
   --social-icon: #000000;
   --code-text-color: #e1e4e8;
+  --project-description-color: oklch(21% 0.034 264.665);
 
   &.dark {
     --primary-text: #ffffff;
@@ -39,6 +42,7 @@ html {
     --body-background: #171717;
     --social-icon: #ffffff;
     --code-text-color: #ffffff;
+    --project-description-color: oklch(87.2% 0.01 258.338);
   }
 }
 
@@ -61,22 +65,23 @@ body {
 }
 
 #x-icon,
-#github-icon {
+#github-icon,
+#long-arrow-down {
   fill: var(--social-icon);
 }
 
 code {
   font-family: "Inconsolata", monospace;
-  font-size: .875rem;
+  font-size: 0.875rem;
 
-  span{
+  span {
     font-family: "Inconsolata", monospace;
   }
 }
 
-
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }

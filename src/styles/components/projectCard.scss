@@ -14,7 +14,12 @@
     align-items: center;
     margin-bottom: 1rem;
 
+    @media(max-width: 500px) {
+      margin-bottom: .5rem;
+    }
+
     h3 {
+      font-size: clamp(1rem, 0.7656rem + 0.75vw, 1.1875rem);
       margin: 0;
     }
 
@@ -25,6 +30,7 @@
 
   p {
     margin: 0;
-    color: oklch(87.2% 0.01 258.338);
+    color: var(project-description-color);
+    font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
   }
 }

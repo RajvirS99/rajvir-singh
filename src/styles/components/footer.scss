@@ -13,3 +13,21 @@ footer {
     }
   }
 }
+
+.index-footer {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border-top: solid 1px;
+  border-color: var(project-description-color);
+
+  p {
+    color: var(project-description-color);
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 1.5rem;
+    }
+}
