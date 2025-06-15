@@ -1,51 +1,53 @@
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-
-  .my-image {
-    border-radius: 50%;
-    border: none;
-    margin-bottom: 20px;
-    object-fit: contain;
-
-    @media (max-width: 550px) {
-      width: 250px;
-      height: 250px;
-    }
-
-    @media (max-width: 400px) {
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  &-heading {
-    font-size: clamp(1.5rem, 0.4063rem + 3.5vw, 2.375rem);
-    padding: 0 1rem;
-    text-align: center;
-    margin: 0;
-
-    .bold {
-      font-weight: bold;
-    }
-  }
-
-  &-subheading {
-    text-align: center;
-    font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
-  }
-
-  &-social-icons {
+  &-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    height: 80vh;
 
-    svg {
-      height: 1.875rem;
+    .my-image {
+      border-radius: 50%;
+      border: none;
+      margin-bottom: 20px;
+      object-fit: contain;
+
+      @media (max-width: 550px) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @media (max-width: 400px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .hero-section-heading {
+      font-size: clamp(1.5rem, 0.4063rem + 3.5vw, 2.375rem);
+      padding: 0 1rem;
+      text-align: center;
+      margin: 0;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+
+    .hero-section-subheading {
+      text-align: center;
+      font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
+    }
+
+    .hero-section-social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        height: 1.875rem;
+      }
     }
   }
 }
@@ -75,13 +77,13 @@
   }
 
   h1 {
-    font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);;
+    font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
     text-align: center;
     margin: 5rem 0;
 
     @media (max-width: 768px) {
-    margin: 2rem 0;
-  }
+      margin: 2rem 0;
+    }
   }
 
   &-content {

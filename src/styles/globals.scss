@@ -28,6 +28,7 @@
 
 html {
   transition: 200ms ease-in-out;
+  min-height: -webkit-fill-available;
 
   --primary-text: #000000;
   --secondary-text: #727272;
@@ -62,6 +63,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 #x-icon,
