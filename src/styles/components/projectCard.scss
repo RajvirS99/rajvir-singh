@@ -23,14 +23,31 @@
       margin: 0;
     }
 
-    svg {
+    a{
+      display: flex;
+      align-items: center;
+      gap: .3rem;
+      opacity: 0.6;
+      text-decoration: none;
+      font-size: .875rem;
+
+      &:hover{
+        opacity: 1;
+      }
+
+      svg {
       color: oklch(87.2% 0.01 258.338);
+
+      &:hover{
+        color: white;
+      }
+    }
     }
   }
 
   p {
     margin: 0;
-    color: var(project-description-color);
+    color: var(--project-description-color);
     font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
   }
 }
