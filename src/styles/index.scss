@@ -83,6 +83,10 @@
   margin: 0;
   text-decoration: none;
 
+  p{
+    margin: 0 0 1rem;
+  }
+
   svg {
     animation: bounce 2000ms;
     animation-iteration-count: infinite;
