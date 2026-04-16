@@ -21,7 +21,7 @@ export default function Home() {
         <div>
           <h3 className="font-bold text-xl">Rajvir Singh</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Frontend Software Engineer
+            Frontend Software Engineers
           </p>
         </div>
         <p className="text-gray-500 dark:text-gray-400">
