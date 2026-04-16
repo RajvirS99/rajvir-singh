@@ -1,0 +1,64 @@
+export const metadata = {
+  title: "My first experience with React Flow",
+  date: "2025-04-12",
+  description:
+    "What I learned building my first interactive node-based diagram with React Flow — from setup to custom nodes.",
+};
+
+React Flow is a library for building node-based editors and interactive diagrams. I recently used it in a project and wanted to share what I learned.
+
+## Getting started
+
+Install it with your package manager:
+
+```bash
+npm install @xyflow/react
+```
+
+Then wrap your app with the provider and render the flow:
+
+```tsx
+import { ReactFlow, Background, Controls } from "@xyflow/react";
+
+const initialNodes = [
+  { id: "1", position: { x: 0, y: 0 }, data: { label: "Start" } },
+  { id: "2", position: { x: 200, y: 100 }, data: { label: "End" } },
+];
+
+const initialEdges = [{ id: "e1-2", source: "1", target: "2" }];
+
+export default function FlowEditor() {
+  return (
+    <div style={{ height: 500 }}>
+      <ReactFlow nodes={initialNodes} edges={initialEdges}>
+        <Background />
+        <Controls />
+      </ReactFlow>
+    </div>
+  );
+}
+```
+
+## Custom nodes
+
+The real power comes from custom nodes. You define a component and register it in the `nodeTypes` map:
+
+```tsx
+function CustomNode({ data }: { data: { label: string } }) {
+  return (
+    <div className="rounded-lg border border-blue-500 bg-blue-50 px-4 py-2">
+      {data.label}
+    </div>
+  );
+}
+
+const nodeTypes = { custom: CustomNode };
+```
+
+## What I'd do differently
+
+- Use `useNodesState` and `useEdgesState` from the start — managing state manually gets messy fast.
+- Read the docs on handles carefully. Misplacing a handle breaks edge connections in subtle ways.
+- Test on mobile early — panning and pinch-to-zoom need explicit configuration.
+
+Overall, React Flow has an excellent API and great defaults. Highly recommended for any node-graph UI.
