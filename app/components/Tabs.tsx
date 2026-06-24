@@ -17,6 +17,13 @@ const tabContent: Record<string, React.ReactNode> = {
 
 export default function TabsContainer() {
   const [selected, setSelected] = useState(tabs[0]);
+  const [direction, setDirection] = useState<"left" | "right">("right");
+
+  function selectTab(tab: string) {
+    if (tab === selected) return;
+    setDirection(tabs.indexOf(tab) > tabs.indexOf(selected) ? "right" : "left");
+    setSelected(tab);
+  }
 
   return (
     <div className="flex flex-col gap-6">
@@ -24,7 +31,7 @@ export default function TabsContainer() {
         {tabs.map((tab) => (
           <p
             key={tab}
-            onClick={() => setSelected(tab)}
+            onClick={() => selectTab(tab)}
             className={`text-md cursor-pointer pb-1 -mb-4.25 border-b-2 transition-colors shrink-0 ${
               selected === tab
                 ? "border-gray-900 text-gray-900 dark:border-white dark:text-white"
@@ -35,7 +42,16 @@ export default function TabsContainer() {
           </p>
         ))}
       </div>
-      {tabContent[selected]}
+      <div
+        key={selected}
+        className={
+          direction === "right"
+            ? "animate-slide-in-right"
+            : "animate-slide-in-left"
+        }
+      >
+        {tabContent[selected]}
+      </div>
     </div>
   );
 }

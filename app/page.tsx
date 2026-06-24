@@ -16,20 +16,27 @@ export default function Home() {
           src={rajvirSingh}
           alt="rajvir-singh"
           width={96}
-          className="rounded-xl mx-auto"
+          className="rounded-xl mx-auto animate-fade-up"
+          style={{ animationDelay: "0ms" }}
         />
-        <div>
+        <div className="animate-fade-up" style={{ animationDelay: "100ms" }}>
           <h3 className="font-bold text-xl">Rajvir Singh</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Frontend Software Engineers
+            Frontend Software Engineer
           </p>
         </div>
-        <p className="text-gray-500 dark:text-gray-400">
+        <p
+          className="text-gray-500 dark:text-gray-400 animate-fade-up"
+          style={{ animationDelay: "200ms" }}
+        >
           Hi, I am a frontend software engineer from Punjab, India. I love to
           build web applications in JavaScript. I like to contribute to open
           source, and share insights on YouTube.
         </p>
-        <div className="flex justify-center gap-4">
+        <div
+          className="flex items-center justify-center gap-4 animate-fade-up"
+          style={{ animationDelay: "300ms" }}
+        >
           <a
             href="https://github.com/RajvirS99"
             target="_blank"
@@ -59,7 +66,9 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <TabsContainer />
+      <div className="animate-fade-up" style={{ animationDelay: "400ms" }}>
+        <TabsContainer />
+      </div>
       <Footer />
     </div>
   );

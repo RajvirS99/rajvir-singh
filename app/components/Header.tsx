@@ -26,7 +26,15 @@ function Header() {
   }
 
   return (
-    <div className="flex flex-row-reverse">
+    <div className="flex items-center justify-end gap-6">
+      <a
+        href={process.env.NEXT_PUBLIC_RESUME_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-500 dark:text-gray-400 hover:underline hover:text-gray-900 dark:hover:text-white transition-colors"
+      >
+        Resume
+      </a>
       <button
         onClick={toggle}
         className="cursor-pointer"

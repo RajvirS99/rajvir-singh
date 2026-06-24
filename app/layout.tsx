@@ -37,6 +37,7 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-ZX1VRSZ3MN" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
