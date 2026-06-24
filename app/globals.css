@@ -54,7 +54,7 @@ html.light {
 
 .animate-fade-up {
   opacity: 0;
-  animation: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* Tab-switch animations: slide in directionally + fade.
@@ -83,12 +83,22 @@ html.light {
 
 .animate-slide-in-right {
   opacity: 0;
-  animation: slide-in-right 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: slide-in-right 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .animate-slide-in-left {
   opacity: 0;
-  animation: slide-in-left 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: slide-in-left 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Hover: slide the block to the right.
+   Defined here (unlayered, more specific than the global `*` transition rule)
+   so the transform actually animates instead of snapping. */
+.slide-on-hover {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.slide-on-hover:hover {
+  transform: translateX(4px);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -97,6 +107,12 @@ html.light {
   .animate-slide-in-left {
     opacity: 1;
     animation: none;
+  }
+  .slide-on-hover {
+    transition: none;
+  }
+  .slide-on-hover:hover {
+    transform: none;
   }
 }
 

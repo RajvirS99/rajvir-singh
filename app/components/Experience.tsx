@@ -26,7 +26,10 @@ function Experience() {
   return (
     <div className="flex flex-col gap-8">
       {experience.map((job) => (
-        <div key={job.company} className="flex flex-col gap-1">
+        <div
+          key={job.company}
+          className="flex flex-col gap-1 slide-on-hover"
+        >
           <div className="flex justify-between items-baseline">
             <h4 className="font-semibold">{job.company}</h4>
             <p className="text-sm text-gray-500 dark:text-gray-400">
